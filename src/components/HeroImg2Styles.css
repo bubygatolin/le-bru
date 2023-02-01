@@ -1,0 +1,43 @@
+.hero-img{
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(241,214,207,0.9);
+    position: relative;
+    ;
+}
+.heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero-img::before{
+    content: '';
+    background: url('https://scontent.fcgh19-1.fna.fbcdn.net/v/t39.30808-6/305838370_762582731851465_5090935345552405097_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=2qcRRXAXnaEAX8Zhzhh&tn=7ThlCGnIFPbQIqh1&_nc_ht=scontent.fcgh19-1.fna&oh=00_AfDLr7NbzMP2WFsbx8KFtd3kUkr2mE-8l3jBJMN9ShD-zA&oe=63DD7303');
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+.hero-img h1{
+    font-size: 2.4rem;
+}
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width:640px) {
+    .hero-img h1{
+        font-size: 2rem;
+    }
+   
+}

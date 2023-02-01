@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './index.css';
+import Home from './routes/Home';
+import Eventos from './routes/Presentes';
+import Flores from './routes/Flores';
+import Contato from './routes/Contato';
+import {FaWhatsapp} from 'react-icons/fa';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import { Route, Routes } from "react-router-dom";
+import Presentes from "./routes/Presentes";
+
+
+
+
+
+function App(){
+    return(
+        <>
+
+            <a className="whats-link" href='https://web.whatsapp.com/send?phone=5511960814261/'> <FaWhatsapp className="fa-whats"
+                size={40} 
+                /></a>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/flores" element={<Flores />} />
+                <Route path="/presentes" element={<Presentes />} />
+                <Route path="/contato" element={<Contato />} />
+            </Routes>
+            a 
+            
+        
+        </>
+    );
 }
 
 export default App;
