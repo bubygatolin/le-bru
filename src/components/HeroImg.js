@@ -12,9 +12,8 @@ const HeroImg = () => {
             <img className='into-img' src={IntroImg} alt='IntroImg' />
         </div>
         <div className='content'>
-            
-            <h1>Decoração Fina</h1>
             <p>Decoração de festas e mesas. Mesa posta, arranjos florais, jantares, festas, mini eventos. Consultoria, personalização e material. Será um prazer!</p>
+            <h1>Decoração Fina</h1>
         
             <div>
                 <Link to={'/flores'}className='btn btn-light'>Flores</Link>

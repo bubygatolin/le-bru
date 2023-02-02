@@ -48,10 +48,6 @@
 }
 
 @media screen and (max-width:640px) {
-
-    .content{
-        margin: 1;
-    }
     .hero .content h1{
         font-size: 3rem;       
     }
