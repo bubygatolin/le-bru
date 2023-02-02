@@ -47,12 +47,12 @@
     
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:400px) {
     .hero .content h1{
-        font-size: 2rem;       
+        font-size: 3rem;       
     }
     .hero .content p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     
 }
