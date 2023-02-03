@@ -1,14 +1,13 @@
 import React from "react";
 import './index.css';
 import Home from './routes/Home';
-import Eventos from './routes/Presentes';
+import Presentes from './routes/Presentes';
 import Flores from './routes/Flores';
 import Contato from './routes/Contato';
 import {FaWhatsapp} from 'react-icons/fa';
 
 
 import { Route, Routes } from "react-router-dom";
-import Presentes from "./routes/Presentes";
 
 
 
@@ -26,8 +25,7 @@ function App(){
                 <Route path="/flores" element={<Flores />} />
                 <Route path="/presentes" element={<Presentes />} />
                 <Route path="/contato" element={<Contato />} />
-            </Routes>
-            a 
+            </Routes>           
             
         
         </>
